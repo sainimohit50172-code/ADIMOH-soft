@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.primary.500') transparent;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-dark-900;
+  }
+  
+  .dark body {
+    @apply bg-dark-950 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+  
+  .dark .glass {
+    @apply bg-dark-800/80 border-dark-700/50;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl;
+  }
+  
+  .dark .glass-card {
+    @apply bg-dark-800/50 border-dark-700/30;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl
+           transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-dark-900 font-semibold rounded-xl border-2 border-dark-200
+           transition-all duration-300 hover:border-primary-500 hover:text-primary-600
+           dark:bg-dark-800 dark:text-white dark:border-dark-700 dark:hover:border-primary-500;
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-xl
+           transition-all duration-300 hover:bg-primary-500 hover:text-white;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  .section-layout {
+    @apply section-padding;
+  }
+
+  .section-inner {
+    @apply container-custom mx-auto;
+  }
+
+  .section-heading {
+    @apply mx-auto max-w-4xl text-center md:text-left;
+  }
+
+  .section-grid {
+    @apply grid gap-10 items-center;
+  }
+
+  .section-cta-row {
+    @apply mt-8 flex flex-wrap items-center gap-4;
+  }
+  
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight;
+  }
+  
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight;
+  }
+  
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-display font-semibold leading-tight;
+  }
+  
+  .heading-4 {
+    @apply text-xl md:text-2xl font-display font-semibold;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 via-primary-400 to-primary-600;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-white dark:bg-dark-800 border border-dark-200 dark:border-dark-700 rounded-xl
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
+           transition-all duration-300 placeholder:text-dark-400;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:-translate-y-1;
+  }
+  
+  .section-dark {
+    @apply bg-dark-900 text-white;
+  }
+  
+  .section-light {
+    @apply bg-gray-50 dark:bg-dark-950;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(14, 165, 233, 0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, primary-500, primary-700);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}

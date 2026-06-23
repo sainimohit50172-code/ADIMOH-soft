@@ -1,0 +1,186 @@
+export const services = [
+  {
+    id: 1,
+    title: 'Web Development',
+    description: 'Custom websites and web applications built with modern technologies.',
+    icon: 'GiWorld',
+    features: ['Custom Web Apps', 'E-commerce Solutions', 'CMS Development', 'API Integration'],
+    price: 'From $2,500',
+  },
+  {
+    id: 2,
+    title: 'Mobile App Development',
+    description: 'Native and cross-platform mobile applications for iOS and Android.',
+    icon: 'GiSmartphone',
+    features: ['iOS Development', 'Android Development', 'React Native', 'Flutter Apps'],
+    price: 'From $5,000',
+  },
+  {
+    id: 3,
+    title: 'React Development',
+    description: 'Specialized React.js development for scalable frontend solutions.',
+    icon: 'SiReact',
+    features: ['React.js/Next.js', 'State Management', 'Component Libraries', 'Performance Optimization'],
+    price: 'From $3,000',
+  },
+  {
+    id: 4,
+    title: 'Node.js Development',
+    description: 'Backend development with Node.js for scalable server applications.',
+    icon: 'SiNodedotjs',
+    features: ['REST APIs', 'GraphQL', 'Microservices', 'Real-time Apps'],
+    price: 'From $3,500',
+  },
+  {
+    id: 5,
+    title: 'Python Development',
+    description: 'Python solutions for data science, AI, and web applications.',
+    icon: 'SiPython',
+    features: ['Django/Flask', 'Data Analysis', 'Machine Learning', 'Automation'],
+    price: 'From $3,000',
+  },
+  {
+    id: 6,
+    title: 'Laravel Development',
+    description: 'Enterprise PHP development with Laravel framework.',
+    icon: 'SiLaravel',
+    features: ['Laravel Apps', 'REST APIs', 'Authentication', 'Database Design'],
+    price: 'From $2,500',
+  },
+  {
+    id: 7,
+    title: 'UI/UX Design',
+    description: 'User-centered design that delivers exceptional digital experiences.',
+    icon: 'GiPalette',
+    features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
+    price: 'From $1,500',
+  },
+  {
+    id: 8,
+    title: 'E-commerce Development',
+    description: 'Online stores that drive sales and provide seamless shopping experiences.',
+    icon: 'GiShoppingCart',
+    features: ['Shopify', 'WooCommerce', 'Custom Stores', 'Payment Integration'],
+    price: 'From $4,000',
+  },
+  {
+    id: 9,
+    title: 'CRM Development',
+    description: 'Custom CRM solutions to streamline your business processes.',
+    icon: 'GiDatabase',
+    features: ['Custom CRMs', 'Workflow Automation', 'Lead Management', 'Analytics'],
+    price: 'From $5,000',
+  },
+  {
+    id: 10,
+    title: 'LMS Development',
+    description: 'Learning management systems for online education platforms.',
+    icon: 'GiBookshelf',
+    features: ['Course Management', 'Progress Tracking', 'Video Hosting', 'Certifications'],
+    price: 'From $4,500',
+  },
+  {
+    id: 11,
+    title: 'API Development',
+    description: 'Secure and scalable APIs for seamless integrations.',
+    icon: 'GiGear',
+    features: ['REST APIs', 'GraphQL', 'Documentation', 'Security'],
+    price: 'From $2,000',
+  },
+  {
+    id: 12,
+    title: 'AI Solutions',
+    description: 'Artificial intelligence solutions to automate and enhance your business.',
+    icon: 'GiRobot',
+    features: ['Machine Learning', 'NLP', 'Computer Vision', 'Chatbots'],
+    price: 'From $6,000',
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: 'Expert Team',
+    description: 'Our developers and designers have 5+ years of industry experience.',
+    icon: 'GiTeam',
+  },
+  {
+    title: 'On-Time Delivery',
+    description: 'We deliver projects on schedule without compromising quality.',
+    icon: 'GiClockwise',
+  },
+  {
+    title: '24/7 Support',
+    description: 'Round-the-clock support to address any concerns or issues.',
+    icon: 'GiHealthBoost',
+  },
+  {
+    title: 'Competitive Pricing',
+    description: 'Premium quality services at transparent, competitive rates.',
+    icon: 'GiMoneyStack',
+  },
+];
+
+export const technologies = [
+  { name: 'React', icon: 'SiReact', category: 'Frontend' },
+  { name: 'Next.js', icon: 'SiNextdotjs', category: 'Frontend' },
+  { name: 'Vue.js', icon: 'SiVuedotjs', category: 'Frontend' },
+  { name: 'Angular', icon: 'SiAngular', category: 'Frontend' },
+  { name: 'Node.js', icon: 'SiNodedotjs', category: 'Backend' },
+  { name: 'Python', icon: 'SiPython', category: 'Backend' },
+  { name: 'Laravel', icon: 'SiLaravel', category: 'Backend' },
+  { name: 'Django', icon: 'SiDjango', category: 'Backend' },
+  { name: 'PostgreSQL', icon: 'SiPostgresql', category: 'Database' },
+  { name: 'MongoDB', icon: 'SiMongodb', category: 'Database' },
+  { name: 'Docker', icon: 'SiDocker', category: 'DevOps' },
+  { name: 'AWS', icon: 'SiAmazon', category: 'Cloud' },
+  { name: 'Figma', icon: 'SiFigma', category: 'Design' },
+  { name: 'Tailwind', icon: 'SiTailwindcss', category: 'Frontend' },
+  { name: 'TypeScript', icon: 'SiTypescript', category: 'Frontend' },
+  { name: 'GraphQL', icon: 'SiGraphql', category: 'Backend' },
+];
+
+export const processSteps = [
+  {
+    step: '01',
+    title: 'Discovery',
+    description: 'We analyze your requirements and create a detailed project specification.',
+    duration: '1-2 days',
+  },
+  {
+    step: '02',
+    title: 'Design',
+    description: 'Our designers create wireframes and visual designs for your approval.',
+    duration: '3-5 days',
+  },
+  {
+    step: '03',
+    title: 'Development',
+    description: 'Our developers build your project using agile methodologies.',
+    duration: '2-8 weeks',
+  },
+  {
+    step: '04',
+    title: 'Testing',
+    description: 'Comprehensive testing to ensure quality and bug-free delivery.',
+    duration: '3-5 days',
+  },
+  {
+    step: '05',
+    title: 'Deployment',
+    description: 'We deploy your project to production and configure servers.',
+    duration: '1-2 days',
+  },
+  {
+    step: '06',
+    title: 'Support',
+    description: 'Ongoing maintenance and support to keep your project running smoothly.',
+    duration: 'Ongoing',
+  },
+];
+
+export const stats = [
+  { value: '500+', label: 'Projects Completed' },
+  { value: '150+', label: 'Happy Clients' },
+  { value: '50+', label: 'Team Members' },
+  { value: '10+', label: 'Years Experience' },
+];
