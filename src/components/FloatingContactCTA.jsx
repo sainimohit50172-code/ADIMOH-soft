@@ -4,29 +4,29 @@ import { companyInfo } from '../data/projects';
 
 export default function FloatingContactCTA() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur-xl dark:border-dark-700 dark:bg-dark-900/95">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center gap-3 rounded-full bg-transparent p-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2">
       <a
         href={`tel:${companyInfo.phone}`}
-        className="flex items-center gap-3 rounded-2xl bg-primary-500 px-4 py-3 text-white shadow-lg transition hover:bg-primary-600"
+        aria-label="Call"
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-slate-900 shadow-[0_18px_45px_rgba(15,23,42,0.18)] transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary-500 hover:text-white dark:bg-slate-900 dark:text-white"
       >
-        <FiPhone size={18} />
-        <span>Call</span>
+        <FiPhone size={20} />
       </a>
       <a
         href={`mailto:${companyInfo.email}`}
-        className="flex items-center gap-3 rounded-2xl bg-slate-900 px-4 py-3 text-white shadow-lg transition hover:bg-slate-800"
+        aria-label="Email"
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-slate-900 shadow-[0_18px_45px_rgba(15,23,42,0.18)] transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white dark:bg-slate-900 dark:text-white"
       >
-        <FiMail size={18} />
-        <span>Email</span>
+        <FiMail size={20} />
       </a>
       <a
         href={`https://wa.me/${companyInfo.phone.replace(/\D/g, '')}`}
         target="_blank"
         rel="noreferrer"
-        className="flex items-center gap-3 rounded-2xl bg-emerald-500 px-4 py-3 text-white shadow-lg transition hover:bg-emerald-600"
+        aria-label="WhatsApp"
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-slate-900 shadow-[0_18px_45px_rgba(15,23,42,0.18)] transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-emerald-500 hover:text-white dark:bg-slate-900 dark:text-white"
       >
-        <FiMessageCircle size={18} />
-        <span>WhatsApp</span>
+        <FiMessageCircle size={20} />
       </a>
     </div>
   );
