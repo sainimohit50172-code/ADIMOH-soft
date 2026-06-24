@@ -38,8 +38,8 @@ const initialForm = {
 
 export default function Careers() {
   usePageMetadata({
-    title: 'Careers | Nexa',
-    description: 'Join the Nexa team. Explore open roles, benefits, and submit your application for freelance and remote positions.',
+    title: 'Careers | AdiMo soft',
+    description: 'Join the AdiMo soft team. Explore open roles, benefits, and submit your application for freelance and remote positions.',
   });
 
   const [form, setForm] = useState(initialForm);
@@ -67,7 +67,7 @@ export default function Careers() {
           <div className="grid gap-10 lg:grid-cols-2 items-center">
             <div className="space-y-6">
               <span className="text-sm uppercase tracking-[0.3em] text-primary-600">Careers</span>
-              <h1 className="heading-2">Open positions at Nexa.</h1>
+              <h1 className="heading-2">Open positions at AdiMo soft.</h1>
               <p className="max-w-2xl text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
                 Join a remote-first freelance agency team focused on building premium digital experiences for ambitious clients.
               </p>

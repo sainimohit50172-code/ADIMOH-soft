@@ -32,7 +32,7 @@ const initialForm = {
 
 export default function HireDeveloper() {
   usePageMetadata({
-    title: 'Hire a Developer | Nexa',
+    title: 'Hire a Developer | AdiMo soft',
     description: 'Hire an experienced freelance developer for web, mobile, and product work. Share your requirements and get a custom proposal.',
   });
 

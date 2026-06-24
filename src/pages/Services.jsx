@@ -5,36 +5,26 @@ import Button from '../components/ui/Button';
 export default function Services() {
   return (
     <main className="bg-white dark:bg-dark-950 text-dark-900 dark:text-white">
-      <section
-        className="section-padding relative overflow-hidden"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1350&q=80')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-slate-950/80" />
-        <div className="container-custom section-inner relative z-10">
-          <div className="section-heading max-w-3xl">
-            <span className="text-sm uppercase tracking-[0.3em] text-primary-300">Services</span>
-            <h1 className="heading-1 mt-4 text-white">Premium freelance services designed for growth.</h1>
-            <p className="mt-6 text-lg leading-relaxed text-slate-200">
+      <section className="section-padding section-light">
+        <div className="container-custom">
+          <div className="max-w-3xl">
+            <span className="text-sm uppercase tracking-[0.3em] text-primary-600">Services</span>
+            <h1 className="heading-2 mt-4">Premium freelance services designed for growth.</h1>
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               Explore the full range of services available for web, mobile, design, and product development. Every offering is built to scale and deliver a premium end-user experience.
             </p>
           </div>
-        </div>
-      </section>
-      <section className="section-padding section-light">
-        <div className="container-custom">
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
-              <div key={service.id} className="glass p-6 rounded-[2rem] hover:-translate-y-1 transition-transform duration-300">
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-primary-500/10 text-primary-600 text-2xl">
-                  {service.icon}
+              <div key={service.id} className="group glass p-6 rounded-[2rem] hover:-translate-y-1 transition-transform duration-300">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-primary-500/10 text-primary-600 text-2xl transition-all duration-300 group-hover:text-primary-700 group-hover:scale-105">
+                    <service.icon className="h-7 w-7" />
+                  </div>
+                  <h2 className="text-xl font-semibold text-slate-900 dark:text-white min-w-0">{service.title}</h2>
                 </div>
-                <h2 className="mt-6 text-xl font-semibold text-slate-900 dark:text-white">{service.title}</h2>
-                <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">{service.description}</p>
+                <p className="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed">{service.description}</p>
                 <ul className="mt-6 space-y-2 text-slate-500 dark:text-slate-400 text-sm">
                   {service.features.map((feature) => (
                     <li key={feature}>• {feature}</li>

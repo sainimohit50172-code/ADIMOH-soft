@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiMessageCircle } from 'react-icons/fi';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
+import { companyInfo } from '../data/projects';
 
 const initialForm = {
   name: '',
@@ -76,7 +77,12 @@ export default function Contact() {
                     </span>
                     <div>
                       <p className="font-semibold text-slate-900 dark:text-white">Email</p>
-                      <p className="text-slate-600 dark:text-slate-300">hello@nexa.com</p>
+                      <a
+                        href={`mailto:${companyInfo.email}`}
+                        className="text-slate-600 dark:text-slate-300 hover:text-primary-600"
+                      >
+                        {companyInfo.email}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -87,7 +93,30 @@ export default function Contact() {
                     </span>
                     <div>
                       <p className="font-semibold text-slate-900 dark:text-white">Phone</p>
-                      <p className="text-slate-600 dark:text-slate-300">+1 (555) 123-4567</p>
+                      <a
+                        href={`tel:${companyInfo.phone}`}
+                        className="text-slate-600 dark:text-slate-300 hover:text-primary-600"
+                      >
+                        {companyInfo.phone}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="glass p-6">
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-600">
+                      <FiMessageCircle size={20} />
+                    </span>
+                    <div>
+                      <p className="font-semibold text-slate-900 dark:text-white">WhatsApp</p>
+                      <a
+                        href={`https://wa.me/${companyInfo.phone.replace(/\D/g, '')}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-600 dark:text-slate-300 hover:text-primary-600"
+                      >
+                        {companyInfo.phone}
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -22,11 +22,9 @@ export default function Footer() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             <div className="lg:col-span-1">
-              <Link to="/" className="flex items-center space-x-2 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">N</span>
-                </div>
-                <span className="text-2xl font-display font-bold">Nexa</span>
+              <Link to="/" className="flex flex-col leading-tight mb-6">
+                <span className="text-2xl font-display font-bold text-white">ADIMOH</span>
+                <span className="text-xs uppercase tracking-[0.3em] text-slate-300">soft</span>
               </Link>
               <p className="text-dark-400 mb-6">
                 Building Digital Excellence. We transform ideas into powerful digital solutions.
@@ -145,7 +143,7 @@ export default function Footer() {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-dark-400 text-sm">
-              © {currentYear} Nexa. All rights reserved.
+              © {currentYear} AdiMo soft. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy-policy" className="text-dark-400 hover:text-primary-400 transition-colors">

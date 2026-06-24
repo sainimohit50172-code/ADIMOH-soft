@@ -7,7 +7,7 @@ import Button from '../components/ui/Button';
 
 export default function Pricing() {
   usePageMetadata({
-    title: 'Pricing Plans | Nexa',
+    title: 'Pricing Plans | AdiMo soft',
     description: 'Choose the right freelance package for your project. Compare Starter, Professional, and Enterprise plans with clear features and CTAs.',
   });
 

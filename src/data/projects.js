@@ -25,7 +25,7 @@ export const projects = [
         { label: 'SKU capacity', value: '100k+' },
       ],
       quote: {
-        text: 'Nexa gave us a storefront that feels premium and works reliably at scale. The checkout experience is now effortless for customers.',
+        text: 'AdiMo soft gave us a storefront that feels premium and works reliably at scale. The checkout experience is now effortless for customers.',
         author: 'Alicia Hart, COO, RetailHub',
       },
       sections: [
@@ -681,20 +681,20 @@ export const openPositions = [
 ];
 
 export const companyInfo = {
-  name: 'Nexa',
+  name: 'AdiMo soft',
   tagline: 'Building Digital Excellence',
-  description: 'Nexa is a premium freelance agency connecting businesses with world-class developers and designers. We transform ideas into powerful digital solutions.',
+  description: 'AdiMo soft is a premium freelance agency connecting businesses with world-class developers and designers. We transform ideas into powerful digital solutions.',
  founded: 2014,
-  email: 'hello@nexa.com',
-  phone: '+1 (555) 123-4567',
+  email: 'sainimohit50172@gmail.com',
+  phone: '+91 91935 45017',
   address: '123 Tech Street, San Francisco, CA 94105',
-  website: 'https://nexa.com',
+  website: 'https://adimosoft.com',
   socialMedia: {
-    facebook: 'https://facebook.com/nexa',
-    twitter: 'https://twitter.com/nexa',
-    linkedin: 'https://linkedin.com/company/nexa',
-    instagram: 'https://instagram.com/nexa',
-    github: 'https://github.com/nexa',
+    facebook: 'https://facebook.com/adimosoft',
+    twitter: 'https://twitter.com/adimosoft',
+    linkedin: 'https://linkedin.com/company/adimosoft',
+    instagram: 'https://instagram.com/adimosoft',
+    github: 'https://github.com/adimosoft',
   },
   hours: {
     monday: '9:00 AM - 6:00 PM',

@@ -6,7 +6,7 @@ import Button from '../components/ui/Button';
 
 export default function Testimonials() {
   usePageMetadata({
-    title: 'Testimonials | Nexa',
+    title: 'Testimonials | AdiMo soft',
     description: 'Watch video testimonials and read client reviews from successful freelance projects and premium digital experiences.',
   });
 

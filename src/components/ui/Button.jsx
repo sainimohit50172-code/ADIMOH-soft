@@ -14,10 +14,10 @@ export default function Button({
   className = '',
 }) {
   const variants = {
-    primary: 'bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:shadow-lg hover:shadow-primary-500/30',
-    secondary: 'bg-white dark:bg-dark-800 text-dark-900 dark:text-white border-2 border-dark-200 dark:border-dark-700 hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500',
-    outline: 'border-2 border-primary-500 text-primary-600 hover:bg-primary-500 hover:text-white',
-    ghost: 'text-dark-600 dark:text-dark-300 hover:bg-dark-100 dark:hover:bg-dark-800',
+    primary: 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-sm shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30',
+    secondary: 'bg-white dark:bg-dark-800 text-dark-900 dark:text-white border-2 border-dark-200 dark:border-dark-700 shadow-sm hover:bg-primary-500 hover:border-primary-500 hover:text-white dark:hover:text-white',
+    outline: 'bg-transparent border-2 border-primary-500 text-primary-600 shadow-sm hover:bg-primary-500 hover:text-white',
+    ghost: 'bg-transparent text-dark-600 dark:text-dark-300 hover:bg-dark-100 dark:hover:bg-dark-800',
   };
 
   const sizes = {
@@ -35,7 +35,8 @@ export default function Button({
       disabled={disabled || loading}
       className={`
         inline-flex items-center justify-center font-semibold rounded-xl
-        transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
+        transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white
+        dark:focus-visible:ring-offset-dark-950 disabled:opacity-50 disabled:cursor-not-allowed
         ${variants[variant]} ${sizes[size]}
         ${fullWidth ? 'w-full' : ''}
         ${className}

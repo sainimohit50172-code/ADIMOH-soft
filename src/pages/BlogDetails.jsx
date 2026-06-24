@@ -9,7 +9,7 @@ export default function BlogDetails() {
   const post = blogPosts.find((item) => item.slug === slug);
 
   usePageMetadata({
-    title: post ? `${post.title} | Nexa` : 'Blog Post | Nexa',
+    title: post ? `${post.title} | AdiMo soft` : 'Blog Post | AdiMo soft',
     description: post ? post.excerpt : 'Read this blog post on modern web development and freelance growth.',
   });
 

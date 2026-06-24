@@ -6,7 +6,7 @@ export const testimonials = [
     company: 'TechStart Inc.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
     rating: 5,
-    text: 'Nexa transformed our vision into a stunning web application. Their team delivered exceptional quality within our timeline and budget. Highly recommended!',
+    text: 'AdiMo soft transformed our vision into a stunning web application. Their team delivered exceptional quality within our timeline and budget. Highly recommended!',
     project: 'Web Application',
   },
   {
@@ -26,7 +26,7 @@ export const testimonials = [
     company: 'HealthTech Labs',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop',
     rating: 5,
-    text: 'Working with Nexa on our healthcare app was seamless. They understood our complex requirements and delivered a secure, scalable solution.',
+    text: 'Working with AdiMo soft on our healthcare app was seamless. They understood our complex requirements and delivered a secure, scalable solution.',
     project: 'Mobile Health App',
   },
   {

@@ -1,7 +1,7 @@
-# Nexa - Premium Freelance Agency Website
+# AdiMo soft - Premium Freelance Agency Website
 
 ## Project Overview
-- **Project Name**: Nexa - Elite Freelance Agency
+- **Project Name**: AdiMo soft - Elite Freelance Agency
 - **Type**: Multi-page professional services website
 - **Core Functionality**: A world-class freelance agency where clients can submit project requirements and hire developers/designers for custom projects
 - **Target Users**: Business owners, startups, enterprises seeking premium development and design services

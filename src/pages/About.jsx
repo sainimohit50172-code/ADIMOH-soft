@@ -1,14 +1,90 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaBullseye, FaLightbulb, FaHandshake, FaUserTie, FaRocket, FaChartLine, FaPalette } from 'react-icons/fa';
+import { SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiNodedotjs, SiPython, SiLaravel, SiDjango, SiPostgresql } from 'react-icons/si';
 import { companyInfo } from '../data/projects';
-import { technologies, stats } from '../data/services';
+import { stats } from '../data/services';
 
 const values = [
   { icon: <FaBullseye />, title: 'Precision', description: 'Every project is crafted with exacting attention to detail and strategic thinking.' },
   { icon: <FaLightbulb />, title: 'Innovation', description: 'We use modern technologies and smart UX to create high-impact products.' },
   { icon: <FaHandshake />, title: 'Trust', description: 'Clear communication, transparent planning, and reliable delivery.' },
   { icon: <FaUserTie />, title: 'Quality', description: 'Premium visual polish paired with maintainable code and performance.' },
+];
+
+const techCards = [
+  {
+    name: 'React',
+    category: 'Frontend',
+    icon: <SiReact />, 
+    level: 'Expert',
+    description: 'Building scalable modern web apps with reusable UI components and interactive experiences.',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Next.js',
+    category: 'Frontend',
+    icon: <SiNextdotjs />,
+    level: 'Expert',
+    description: 'Server-rendered React applications with fast performance and SEO-ready architecture.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Vue.js',
+    category: 'Frontend',
+    icon: <SiVuedotjs />,
+    level: 'Advanced',
+    description: 'Reactive interface development with flexible components and polished user interactions.',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Angular',
+    category: 'Frontend',
+    icon: <SiAngular />,
+    level: 'Advanced',
+    description: 'Structured enterprise-grade applications with TypeScript, strong architecture, and maintainability.',
+    image: 'https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Node.js',
+    category: 'Backend',
+    icon: <SiNodedotjs />,
+    level: 'Expert',
+    description: 'Fast, scalable backend services and APIs using JavaScript across the full stack.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Python',
+    category: 'Backend',
+    icon: <SiPython />,
+    level: 'Advanced',
+    description: 'Robust backend systems, automation, and AI-ready solutions built with Python.',
+    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Laravel',
+    category: 'Backend',
+    icon: <SiLaravel />,
+    level: 'Advanced',
+    description: 'Custom PHP applications, admin dashboards, and CRM systems built with Laravel.',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'Django',
+    category: 'Backend',
+    icon: <SiDjango />,
+    level: 'Advanced',
+    description: 'Secure data-driven apps and admin portals powered by Django and clean architecture.',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    name: 'PostgreSQL',
+    category: 'Database',
+    icon: <SiPostgresql />,
+    level: 'Advanced',
+    description: 'Reliable relational database design and optimized queries for production workloads.',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80',
+  },
 ];
 
 export default function About() {
@@ -165,15 +241,27 @@ export default function About() {
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3 items-stretch">
-            {technologies.slice(0, 9).map((tech) => (
-              <div key={tech.name} className="glass p-6 h-full flex flex-col justify-between">
-                <div>
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/10 text-primary-500 text-xl">
-                    {tech.icon}
-                  </div>
-                  <h3 className="mt-5 text-xl font-semibold text-white">{tech.name}</h3>
+            {techCards.map((tech) => (
+              <div key={tech.name} className="group h-full overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/30">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={tech.image}
+                    alt={`${tech.name} preview`}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent" />
                 </div>
-                <p className="mt-3 text-slate-300">{tech.category}</p>
+                <div className="p-6">
+                  <div className="flex items-center gap-3 text-primary-500 text-2xl">
+                    {tech.icon}
+                    <h3 className="text-xl font-semibold text-white">{tech.name}</h3>
+                  </div>
+                  <p className="mt-2 text-sm uppercase tracking-[0.32em] text-primary-300">{tech.category}</p>
+                  <p className="mt-4 text-slate-300 leading-relaxed">{tech.description}</p>
+                  <div className="mt-5 inline-flex items-center rounded-full border border-primary-500/20 bg-white/5 px-4 py-2 text-sm text-primary-200">
+                    {tech.level} level
+                  </div>
+                </div>
               </div>
             ))}
           </div>

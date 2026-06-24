@@ -51,13 +51,21 @@ export default function Navbar() {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">N</span>
-            </div>
-            <span className="text-2xl font-display font-bold text-dark-900 dark:text-white">
-              Nexa
-            </span>
+          <Link to="/" className="flex flex-col leading-tight">
+            <motion.span
+              className={`text-xl md:text-2xl font-display font-bold transition-colors duration-300 ease-in-out ${isScrolled ? 'text-dark-900 dark:text-white' : 'text-white'}`}
+              animate={{ y: [0, -4, 0] }}
+              transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut', repeatDelay: 1 }}
+            >
+              ADIMOH
+            </motion.span>
+            <motion.span
+              className={`text-[10px] uppercase tracking-[0.35em] transition-colors duration-300 ease-in-out ${isScrolled ? 'text-slate-500 dark:text-slate-400' : 'text-slate-200'}`}
+              animate={{ opacity: [0.8, 1, 0.8] }}
+              transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut', repeatDelay: 0.5 }}
+            >
+              soft
+            </motion.span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">

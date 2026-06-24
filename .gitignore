@@ -21,3 +21,7 @@ yarn-debug.log*
 
 # Local deployment artifacts
 deployment-url.txt
+
+# Copilot Superpowers — installed skills (local only, not tracked by git)
+.agent/skills/
+.agent/skills-catalog.md

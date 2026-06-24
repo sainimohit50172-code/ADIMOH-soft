@@ -17,7 +17,7 @@ const initialForm = {
 
 export default function SubmitProject() {
   usePageMetadata({
-    title: 'Submit a Project | Nexa',
+    title: 'Submit a Project | AdiMo soft',
     description: 'Submit your project details and receive a custom proposal. Share scope, timeline, budget, and attachments.',
   });
 

@@ -6,7 +6,7 @@ import Button from '../components/ui/Button';
 
 export default function Blog() {
   usePageMetadata({
-    title: 'Blog | Nexa',
+    title: 'Blog | AdiMo soft',
     description: 'Explore articles on modern web development, freelancing, and digital product strategy.',
   });
 
