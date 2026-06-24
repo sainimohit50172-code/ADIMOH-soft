@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adimoh-soft-ffct.vercel.app/sitemap.xml

@@ -127,7 +127,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <p className="font-semibold text-slate-900 dark:text-white">Location</p>
-                      <p className="text-slate-600 dark:text-slate-300">San Francisco, CA (Remote available)</p>
+                      <p className="text-slate-600 dark:text-slate-300">Location 247667, Roorkee, Haridwar, Uttarakhand</p>
                     </div>
                   </div>
                 </div>

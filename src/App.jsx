@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import SeoManager from './components/SeoManager'
 import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
@@ -28,6 +29,7 @@ function App() {
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="min-h-screen bg-white dark:bg-dark-950 text-dark-900 dark:text-white">
         <Navbar />
+        <SeoManager />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

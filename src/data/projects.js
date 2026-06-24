@@ -687,7 +687,7 @@ export const companyInfo = {
  founded: 2014,
   email: 'sainimohit50172@gmail.com',
   phone: '+91 91935 45017',
-  address: '123 Tech Street, San Francisco, CA 94105',
+  address: 'Location 247667, Roorkee, Haridwar, Uttarakhand',
   website: 'https://adimosoft.com',
   socialMedia: {
     facebook: 'https://facebook.com/adimosoft',
