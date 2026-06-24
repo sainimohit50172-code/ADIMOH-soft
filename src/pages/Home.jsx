@@ -174,27 +174,30 @@ export default function Home() {
             </div>
 
             <div className="grid gap-6">
-              <div className="glass p-8 shadow-2xl">
-                <div className="flex items-center gap-4 mb-6">
+              <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl text-slate-950">
+                <div className="flex items-start gap-4 mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-primary-500/15 flex items-center justify-center text-primary-500">
                     <FaLaptopCode size={22} />
                   </div>
                   <div>
-                    <p className="text-sm uppercase tracking-[0.24em] text-primary-200">Featured Service</p>
-                    <h2 className="text-2xl font-semibold">React & Tailwind Websites</h2>
+                    <p className="text-sm uppercase tracking-[0.24em] text-primary-600">Featured Service</p>
+                    <h2 className="text-2xl font-semibold text-slate-950">React & Tailwind Websites</h2>
+                    <p className="mt-2 text-[#0c2d60] font-semibold leading-relaxed">
+                      Premium web solutions designed for speed, performance, scalability, and exceptional user experience.
+                    </p>
                   </div>
                 </div>
-                <p className="text-white/95 font-medium leading-relaxed">
+                <p className="text-slate-700 font-medium leading-relaxed">
                   A complete freelance website experience with stunning visuals, fast performance, and easy maintenance.
                 </p>
-                <div className="mt-6 grid gap-4">
-                  <div className="rounded-3xl bg-slate-950/80 p-5 border border-slate-800">
-                    <p className="text-sm uppercase tracking-[0.20em] text-slate-400">Goal</p>
-                    <p className="mt-2 font-semibold text-white">Transform visitors into leads using polished design.</p>
+                <div className="mt-5 grid gap-4">
+                  <div className="rounded-3xl bg-slate-100 p-4 border border-slate-200">
+                    <p className="text-sm uppercase tracking-[0.20em] text-slate-500">Goal</p>
+                    <p className="mt-2 text-slate-950 font-semibold">Transform visitors into leads using polished design.</p>
                   </div>
-                  <div className="rounded-3xl bg-slate-950/80 p-5 border border-slate-800">
-                    <p className="text-sm uppercase tracking-[0.20em] text-slate-400">Why Choose Me</p>
-                    <p className="mt-2 font-semibold text-white">Premium UI/UX, responsive layouts, strong technical execution.</p>
+                  <div className="rounded-3xl bg-slate-100 p-4 border border-slate-200">
+                    <p className="text-sm uppercase tracking-[0.20em] text-slate-500">Why Choose Me</p>
+                    <p className="mt-2 text-slate-950 font-semibold">Premium UI/UX, responsive layouts, strong technical execution.</p>
                   </div>
                 </div>
               </div>
