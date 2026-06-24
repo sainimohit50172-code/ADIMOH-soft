@@ -1971,6 +1971,7 @@ calculations
 - **helium-mcp**: Connect to Helium's MCP server for news research, media bias analysis, balanced perspectives, stock/options data, and semantic meme search across 3.2M+ articles and 5,000+ sources _(risk: safe)_
 - **idea-darwin**: Darwinian idea evolution engine — toss rough ideas onto an evolution island, let them compete, crossbreed, and mutate through structured rounds to surface your strongest concepts. _(risk: safe)_
 - **identity-mirror**: One sentence - what this skill does and when to invoke it _(risk: safe)_
+- **infinity**: Enforces a strict input boundary protocol (detect, classify, filter, verify) to ensure untrusted data never reaches business logic raw. _(risk: safe)_
 - **ingest-youtube**: Pull a YouTube video transcript into a queryable markdown vault with yt-dlp subtitle discovery, VTT cleanup, metadata frontmatter, and capture-seed stubs. _(risk: safe)_
 - **internal-comms**: Write internal communications such as status reports, leadership updates, 3P updates, newsletters, FAQs, incident reports, and project updates using repeatable internal formats. _(risk: unknown)_
 - **invariant-guard**: Correctness-first: forces writing the function contract, loop invariant, termination argument, and edge cases BEFORE code. Catches Boyer-Moore, leftmost binary search, QuickSelect traps. _(risk: safe)_
@@ -2053,7 +2054,6 @@ calculations
 - **windows-shell-reliability**: Reliable command execution on Windows: paths, encoding, and common binary pitfalls. _(risk: safe)_
 - **xvary-stock-research**: Thesis-driven equity analysis from public SEC EDGAR and market data; /analyze, /score, /compare workflows with bundled Python tools (Claude Code, Cursor, Codex). _(risk: safe)_
 - **yield-intelligence**: Passive income portfolio analysis — activate when user asks about dividend yields, Treasury rates, REIT income, monthly passive income goals, or portfolio yield optimization. Scans 4 asset classes, ranks by risk-adjusted return, and builds allocations targeting a specific monthly income. _(risk: safe)_
-- **infinity**: Enforces a strict input boundary protocol (detect, classify, filter, verify) to ensure untrusted data never reaches business logic raw. _(risk: safe)_
 
 ## video
 

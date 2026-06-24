@@ -136,7 +136,7 @@ export default function Home() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-slate-950/80" />
+        <div className="absolute inset-0 bg-slate-950/70" />
         <div className="container-custom section-inner relative z-10">
           <div className="section-grid lg:grid-cols-2 items-center">
             <div className="section-heading space-y-8">
@@ -146,7 +146,7 @@ export default function Home() {
               <h1 className="heading-1 text-white max-w-3xl">
                 Build high-impact digital products with a premium freelance developer.
               </h1>
-              <p className="max-w-xl text-lg text-slate-200 leading-relaxed">
+              <p className="max-w-xl text-lg text-white/95 font-medium leading-relaxed">
                 I create modern websites, mobile apps, and digital products that convert visitors into customers. Get a polished, fully responsive project with a premium look and seamless experience.
               </p>
               <div className="section-cta-row">
@@ -184,7 +184,7 @@ export default function Home() {
                     <h2 className="text-2xl font-semibold">React & Tailwind Websites</h2>
                   </div>
                 </div>
-                <p className="text-slate-200 leading-relaxed">
+                <p className="text-white/95 font-medium leading-relaxed">
                   A complete freelance website experience with stunning visuals, fast performance, and easy maintenance.
                 </p>
                 <div className="mt-6 grid gap-4">
@@ -218,8 +218,8 @@ export default function Home() {
                       <p className="mt-2 text-white font-semibold">Web, Mobile, UI/UX, AI</p>
                     </div>
                   </div>
-                  <div className="rounded-3xl bg-slate-900 p-6 border border-slate-800">
-                    <p className="text-sm text-slate-400">Share your project idea, budget, and timeline. I will follow up with a tailored proposal.</p>
+                  <div className="rounded-3xl bg-slate-900/95 p-6 border border-slate-800">
+                    <p className="text-sm text-slate-200 leading-relaxed">Share your project idea, budget, and timeline. I will follow up with a tailored proposal.</p>
                   </div>
                 </div>
               </div>
