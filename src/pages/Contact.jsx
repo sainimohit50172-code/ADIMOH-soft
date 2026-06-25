@@ -3,6 +3,7 @@ import { FiMail, FiPhone, FiMapPin, FiMessageCircle } from 'react-icons/fi';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import { companyInfo } from '../data/projects';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 const initialForm = {
   name: '',
@@ -50,7 +51,7 @@ export default function Contact() {
               </p>
             </div>
             <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-              <img
+              <ImageOptimized
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
                 alt="Contact support"
                 className="h-full w-full object-cover"

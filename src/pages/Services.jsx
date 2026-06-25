@@ -1,6 +1,7 @@
 import React from 'react';
 import { services, whyChooseUs } from '../data/services';
 import Button from '../components/ui/Button';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   return (
@@ -17,7 +18,7 @@ export default function Services() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
-              <div key={service.id} className="group glass p-6 rounded-[2rem] hover:-translate-y-1 transition-transform duration-300">
+              <Link key={service.id} to={`/services/${service.slug}`} className="group glass p-6 rounded-[2rem] hover:-translate-y-1 transition-transform duration-300 block"> 
                 <div className="flex items-center gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-primary-500/10 text-primary-600 text-2xl transition-all duration-300 group-hover:text-primary-700 group-hover:scale-105">
                     <service.icon className="h-7 w-7" />
@@ -31,7 +32,7 @@ export default function Services() {
                   ))}
                 </ul>
                 <p className="mt-6 text-sm font-semibold text-primary-600">{service.price}</p>
-              </div>
+              </Link>
             ))}
           </div>
 

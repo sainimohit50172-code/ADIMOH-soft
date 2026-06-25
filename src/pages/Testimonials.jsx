@@ -3,6 +3,7 @@ import { FaStar } from 'react-icons/fa';
 import { testimonials } from '../data/testimonials';
 import { usePageMetadata } from '../utils/useSeo';
 import Button from '../components/ui/Button';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 export default function Testimonials() {
   usePageMetadata({
@@ -41,7 +42,7 @@ export default function Testimonials() {
             {testimonials.map((item) => (
               <div key={item.id} className="glass p-8 rounded-[2rem]">
                 <div className="flex items-center gap-4">
-                  <img src={item.image} alt={item.name} className="h-16 w-16 rounded-full object-cover" />
+                  <ImageOptimized src={item.image} alt={item.name} className="h-16 w-16 rounded-full object-cover" />
                   <div>
                     <p className="font-semibold text-slate-900 dark:text-white">{item.name}</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400">{item.position}</p>

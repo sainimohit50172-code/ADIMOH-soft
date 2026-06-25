@@ -10,8 +10,19 @@ export default function Footer() {
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Hire Developer', path: '/hire-developer' },
+    { name: 'Submit Project', path: '/submit-project' },
     { name: 'Pricing', path: '/pricing' },
+    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Blog', path: '/blog' },
+    { name: 'Careers', path: '/careers' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'FAQ', path: '/faq' },
+    { name: 'Privacy Policy', path: '/privacy-policy' },
+    { name: 'Terms', path: '/terms-conditions' },
+    { name: 'Refund Policy', path: '/refund-policy' },
   ];
 
   const footerServices = services.slice(0, 6);

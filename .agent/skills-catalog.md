@@ -1,6 +1,6 @@
 # AI Agent Skills — Full Catalog
 
-> Auto-generated. Total: **1682 skills** across **108 categories**.
+> Auto-generated. Total: **1684 skills** across **108 categories**.
 > When asked "what skill should I use?", browse this file and suggest the most relevant skill IDs.
 > Install a skill: `Ctrl+Shift+/` → search for the skill ID → press Enter.
 
@@ -1181,6 +1181,7 @@ makepad Markdown, makepad Html, TextFlow, rich... _(risk: unknown)_
 - **astro**: Build content-focused websites with Astro — zero JS by default, islands architecture, multi-framework components, and Markdown/MDX support. _(risk: safe)_
 - **design-it**: Routes frontend design tasks to 48 specific UI styles. Triggers for websites, app screens, or UI components requesting a specific aesthetic. _(risk: safe)_
 - **design-taste-frontend**: Use when building high-agency frontend interfaces with strict design taste, calibrated color, responsive layout, and motion rules. _(risk: safe)_
+- **emil-design-eng**: Use when designing or reviewing polished product UI with Emil Kowalski-inspired animation, interaction, and component craft guidance. _(risk: safe)_
 - **frontend-api-integration-patterns**: Production-ready patterns for integrating frontend applications with backend APIs, including race condition handling, request cancellation, retry strategies, error normalization, and UI state management. _(risk: safe)_
 - **full-output-enforcement**: Use when a task requires exhaustive unabridged output, complete files, or strict prevention of placeholders and skipped code. _(risk: safe)_
 - **gpt-taste**: Use when generating elite GSAP-heavy frontend pages with strict AIDA structure, wide hero typography, and gapless bento grids. _(risk: safe)_
@@ -1188,6 +1189,7 @@ makepad Markdown, makepad Html, TextFlow, rich... _(risk: unknown)_
 - **industrial-brutalist-ui**: Use when creating raw industrial or tactical telemetry UIs with rigid grids, stark typography, CRT effects, and high-density data. _(risk: safe)_
 - **minimalist-ui**: Use when creating clean editorial interfaces with warm monochrome palettes, crisp borders, restrained motion, and flat bento layouts. _(risk: safe)_
 - **redesign-existing-projects**: Use when upgrading existing websites or apps by auditing generic UI patterns and applying premium design fixes without rewrites. _(risk: safe)_
+- **review-animations**: Use when reviewing animation and motion code against a strict craft, performance, accessibility, and interaction-quality bar. _(risk: safe)_
 - **stitch-design-taste**: Use when generating Google Stitch DESIGN.md systems for premium typography, color, layout, motion intent, and anti-generic UI rules. _(risk: safe)_
 - **sveltekit**: Build full-stack web applications with SvelteKit — file-based routing, SSR, SSG, API routes, and form actions in one framework. _(risk: safe)_
 

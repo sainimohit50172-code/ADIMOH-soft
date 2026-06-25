@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 const sortOptions = [
   { value: 'recent', label: 'Most Recent' },
@@ -159,7 +160,7 @@ export default function Demos() {
                     className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl hover:-translate-y-1 transition-transform duration-300 dark:border-dark-700 dark:bg-dark-900"
                   >
                     <div className="relative overflow-hidden rounded-[1.75rem] bg-slate-950">
-                      <img src={project.image} alt={project.title} className="h-64 w-full object-cover" />
+                      <ImageOptimized src={project.image} alt={project.title} className="h-64 w-full object-cover" />
                       <span className="absolute left-4 top-4 rounded-full bg-primary-500/90 px-4 py-2 text-sm font-semibold text-white shadow-lg">
                         {project.status}
                       </span>

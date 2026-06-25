@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-25T11:46:12.927Z",
+  "steps": [
+    {
+      "name": "sitemap",
+      "status": 0,
+      "stdout": "Sitemaps generated: sitemap.xml and sitemap-images.xml\n",
+      "stderr": ""
+    },
+    {
+      "name": "robots",
+      "status": 0,
+      "stdout": "robots.txt generated\n",
+      "stderr": ""
+    },
+    {
+      "name": "jsonld",
+      "status": 0,
+      "stdout": "JSON-LD validation report written to reports/jsonld-report.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "images",
+      "status": 0,
+      "stdout": "Found 0 <img> tags without alt attribute. Report: reports/missing-image-alts.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "seo-report",
+      "status": 0,
+      "stdout": "SEO report generated at D:\\Users\\pop\\Desktop\\Nexa\\reports\\seo-report.json\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../components/ui/Button';
 import { projects } from '../data/projects';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 export default function Projects() {
   return (
@@ -48,7 +48,7 @@ export default function Projects() {
             {projects.map((project) => (
               <article key={project.id} className="rounded-[2rem] border border-slate-200/70 bg-white dark:bg-dark-900 p-6 shadow-xl transition hover:-translate-y-1">
                 <div className="overflow-hidden rounded-3xl bg-slate-950">
-                  <img src={project.image} alt={project.title} className="h-64 w-full object-cover" />
+                  <ImageOptimized src={project.image} alt={project.title} className="h-64 w-full object-cover" />
                 </div>
                 <div className="mt-6">
                   <span className="inline-flex rounded-full bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700">{project.category}</span>

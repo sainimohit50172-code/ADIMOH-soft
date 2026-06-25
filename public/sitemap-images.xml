@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/future-of-web-development-2024</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>The Future of Web Development in 2024</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/choose-right-tech-stack</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>How to Choose the Right Tech Stack</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/building-scalable-react-applications</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Building Scalable React Applications</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/ui-ux-design-principles-2024</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>UI/UX Design Principles for 2024</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/react-development-best-practices</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>React Development: Best Practices for Scalable Apps</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/nodejs-api-design-guide</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Designing Robust Node.js APIs</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/fastapi-for-modern-backends</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>FastAPI for Modern Backends: Speed & Simplicity</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/lms-development-guidelines</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Building a Learning Management System: Requirements & Architecture</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/crm-development-best-practices</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Custom CRM Development: From Data Model to Automation</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/website-development-cost-guide</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=400&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>How Much Does Website Development Cost in 2024?</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/seo-for-react-sites-2024</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>SEO for React Sites in 2024: Practical Strategies that Work</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/ai-automation-for-small-businesses</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>AI Automation for Small Businesses: Practical Use Cases and ROI</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/ecommerce-seo-checklist-2024</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1503602642458-232111445657?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>E-commerce SEO Checklist for 2024: Technical & Content Essentials</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/performance-optimization-for-pwas</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1526378722012-1e0d6f4f6b5f?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Performance Optimization for PWAs: LCP, CLS, INP Improvements</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/headless-cms-for-scale</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1508385082359-fc3c5e3d8a3a?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Choosing a Headless CMS for Scale: Tradeoffs and Recommendations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/design-systems-for-startups</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1502767089025-6572583495b0?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Design Systems for Startups: Building Consistency Without Slowing Down</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/accessibility-best-practices-2024</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Accessibility Best Practices in 2024: Practical Steps for Developers</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/hiring-remote-developers-guide</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Hiring Remote Developers: A Practical Guide for Founders</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/landing-page-conversion-tactics</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>Landing Page Conversion Tactics: Design, Copy, and Analytics</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adimoh-soft-ffct.vercel.app/blog/api-security-essentials</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop&auto=format&fm=webp</image:loc>
+      <image:caption>API Security Essentials: Authentication, Rate Limiting, and Data Protection</image:caption>
+    </image:image>
+  </url>
+</urlset>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 export default function CaseStudy() {
   const { slug } = useParams();
@@ -42,7 +43,7 @@ export default function CaseStudy() {
               </div>
             </div>
             <div className="rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl dark:border-dark-700">
-              <img src={project.caseStudy.heroImage} alt={project.title} className="h-[420px] w-full object-cover" />
+              <ImageOptimized src={project.caseStudy.heroImage} alt={project.title} className="h-[420px] w-full object-cover" />
             </div>
           </div>
         </div>
@@ -107,7 +108,7 @@ export default function CaseStudy() {
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {project.caseStudy.gallery.map((image) => (
                 <div key={image} className="overflow-hidden rounded-[2rem] bg-slate-100 shadow-lg dark:bg-dark-900">
-                  <img src={image} alt={project.title} className="h-72 w-full object-cover" />
+                  <ImageOptimized src={image} alt={project.title} className="h-72 w-full object-cover" />
                 </div>
               ))}
             </div>

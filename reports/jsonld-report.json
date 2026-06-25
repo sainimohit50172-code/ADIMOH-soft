@@ -1,0 +1,166 @@
+{
+  "articles": [
+    {
+      "slug": "future-of-web-development-2024",
+      "title": "The Future of Web Development in 2024",
+      "errors": []
+    },
+    {
+      "slug": "choose-right-tech-stack",
+      "title": "How to Choose the Right Tech Stack",
+      "errors": []
+    },
+    {
+      "slug": "building-scalable-react-applications",
+      "title": "Building Scalable React Applications",
+      "errors": []
+    },
+    {
+      "slug": "ui-ux-design-principles-2024",
+      "title": "UI/UX Design Principles for 2024",
+      "errors": []
+    },
+    {
+      "slug": "react-development-best-practices",
+      "title": "React Development: Best Practices for Scalable Apps",
+      "errors": []
+    },
+    {
+      "slug": "nodejs-api-design-guide",
+      "title": "Designing Robust Node.js APIs",
+      "errors": []
+    },
+    {
+      "slug": "fastapi-for-modern-backends",
+      "title": "FastAPI for Modern Backends: Speed & Simplicity",
+      "errors": []
+    },
+    {
+      "slug": "lms-development-guidelines",
+      "title": "Building a Learning Management System: Requirements & Architecture",
+      "errors": []
+    },
+    {
+      "slug": "crm-development-best-practices",
+      "title": "Custom CRM Development: From Data Model to Automation",
+      "errors": []
+    },
+    {
+      "slug": "website-development-cost-guide",
+      "title": "How Much Does Website Development Cost in 2024?",
+      "errors": []
+    },
+    {
+      "slug": "seo-for-react-sites-2024",
+      "title": "SEO for React Sites in 2024: Practical Strategies that Work",
+      "errors": []
+    },
+    {
+      "slug": "ai-automation-for-small-businesses",
+      "title": "AI Automation for Small Businesses: Practical Use Cases and ROI",
+      "errors": []
+    },
+    {
+      "slug": "ecommerce-seo-checklist-2024",
+      "title": "E-commerce SEO Checklist for 2024: Technical & Content Essentials",
+      "errors": []
+    },
+    {
+      "slug": "performance-optimization-for-pwas",
+      "title": "Performance Optimization for PWAs: LCP, CLS, INP Improvements",
+      "errors": []
+    },
+    {
+      "slug": "headless-cms-for-scale",
+      "title": "Choosing a Headless CMS for Scale: Tradeoffs and Recommendations",
+      "errors": []
+    },
+    {
+      "slug": "design-systems-for-startups",
+      "title": "Design Systems for Startups: Building Consistency Without Slowing Down",
+      "errors": []
+    },
+    {
+      "slug": "accessibility-best-practices-2024",
+      "title": "Accessibility Best Practices in 2024: Practical Steps for Developers",
+      "errors": []
+    },
+    {
+      "slug": "hiring-remote-developers-guide",
+      "title": "Hiring Remote Developers: A Practical Guide for Founders",
+      "errors": []
+    },
+    {
+      "slug": "landing-page-conversion-tactics",
+      "title": "Landing Page Conversion Tactics: Design, Copy, and Analytics",
+      "errors": []
+    },
+    {
+      "slug": "api-security-essentials",
+      "title": "API Security Essentials: Authentication, Rate Limiting, and Data Protection",
+      "errors": []
+    }
+  ],
+  "services": [
+    {
+      "slug": "web-development",
+      "title": "Web Development",
+      "errors": []
+    },
+    {
+      "slug": "mobile-app-development",
+      "title": "Mobile App Development",
+      "errors": []
+    },
+    {
+      "slug": "react-development",
+      "title": "React Development",
+      "errors": []
+    },
+    {
+      "slug": "nodejs-development",
+      "title": "Node.js Development",
+      "errors": []
+    },
+    {
+      "slug": "python-development",
+      "title": "Python Development",
+      "errors": []
+    },
+    {
+      "slug": "laravel-development",
+      "title": "Laravel Development",
+      "errors": []
+    },
+    {
+      "slug": "ui-ux-design",
+      "title": "UI/UX Design",
+      "errors": []
+    },
+    {
+      "slug": "ecommerce-development",
+      "title": "E-commerce Development",
+      "errors": []
+    },
+    {
+      "slug": "crm-development",
+      "title": "CRM Development",
+      "errors": []
+    },
+    {
+      "slug": "lms-development",
+      "title": "LMS Development",
+      "errors": []
+    },
+    {
+      "slug": "api-development",
+      "title": "API Development",
+      "errors": []
+    },
+    {
+      "slug": "ai-automation",
+      "title": "AI Solutions",
+      "errors": []
+    }
+  ]
+}

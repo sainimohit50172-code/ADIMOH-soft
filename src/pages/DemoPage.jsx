@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 export default function DemoPage() {
   const { slug } = useParams();
@@ -40,7 +41,7 @@ export default function DemoPage() {
               </div>
             </div>
             <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-              <img src={project.demo.heroImage} alt={project.demo.headline} className="h-[460px] w-full object-cover" />
+              <ImageOptimized src={project.demo.heroImage} alt={project.demo.headline} className="h-[460px] w-full object-cover" />
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@ export default function DemoPage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2">
             {project.demo.screens.map((screen) => (
               <div key={screen} className="overflow-hidden rounded-[2rem] bg-slate-100 shadow-xl dark:bg-dark-900">
-                <img src={screen} alt={`${project.title} screen`} className="h-96 w-full object-cover" />
+                <ImageOptimized src={screen} alt={`${project.title} screen`} className="h-96 w-full object-cover" />
               </div>
             ))}
           </div>

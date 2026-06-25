@@ -1,11 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowRight, FaAward, FaBriefcase, FaHeart, FaLaptopCode, FaRocket, FaUsers, FaCheckCircle, FaStar } from 'react-icons/fa';
-import { services, stats, processSteps } from '../data/services';
+import { FaAward, FaBriefcase, FaHeart, FaLaptopCode, FaUsers, FaStar } from 'react-icons/fa';
+import { services, processSteps } from '../data/services';
 import { projects } from '../data/projects';
 import { faqs } from '../data/testimonials';
 import Button from '../components/ui/Button';
+import ImageOptimized from '../components/ui/ImageOptimized';
+
+const MotionImage = motion(ImageOptimized);
 
 const highlights = [
   { title: 'Premium Designs', description: 'Professional UI/UX with modern layouts, motion, and strong conversion patterns.' },
@@ -351,7 +354,7 @@ export default function Home() {
                     transition={{ duration: 0.5 }}
                     className="relative"
                   >
-                    <img src={activeProject.image} alt={activeProject.title} className="h-80 w-full object-cover" />
+                    <ImageOptimized src={activeProject.image} alt={activeProject.title} className="h-80 w-full object-cover" />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 to-transparent p-6">
                       <p className="text-sm uppercase tracking-[0.3em] text-primary-300">{activeProject.category}</p>
                       <h3 className="mt-3 text-3xl font-semibold text-white">{activeProject.title}</h3>
@@ -457,7 +460,7 @@ export default function Home() {
                     transition={{ duration: 0.75, ease: 'easeOut' }}
                     className="relative overflow-hidden rounded-[2rem]"
                   >
-                    <motion.img
+                    <MotionImage
                       src={activeTestimonial.image}
                       alt={activeTestimonial.name}
                       className="h-96 w-full object-cover object-center"

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
-import Button from '../components/ui/Button';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -45,7 +45,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-              <img
+              <ImageOptimized
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
                 alt="Portfolio preview"
                 className="h-full w-full object-cover"
@@ -81,7 +81,7 @@ export default function Portfolio() {
             {filteredProjects.map((project) => (
               <article key={project.id} className="glass p-6 rounded-[2rem] hover:-translate-y-1 transition-transform duration-300">
                 <div className="overflow-hidden rounded-3xl bg-slate-900">
-                  <img src={project.image} alt={project.title} className="h-64 w-full object-cover" />
+                  <ImageOptimized src={project.image} alt={project.title} className="h-64 w-full object-cover" />
                 </div>
                 <div className="mt-6">
                   <span className="inline-flex rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-700">{project.category}</span>

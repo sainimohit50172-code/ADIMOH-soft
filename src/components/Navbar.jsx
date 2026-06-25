@@ -8,8 +8,10 @@ const navLinks = [
   { name: 'About Us', path: '/about' },
   { name: 'Services', path: '/services' },
   { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Case Studies', path: '/case-studies' },
   { name: 'Pricing', path: '/pricing' },
   { name: 'Blog', path: '/blog' },
+  { name: 'Testimonials', path: '/testimonials' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -28,6 +30,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsOpen(false);
   }, [location]);
 

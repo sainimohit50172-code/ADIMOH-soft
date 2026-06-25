@@ -12,7 +12,6 @@ export const projects = [
     timeline: '3 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/retailhub-commerce',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&h=900&fit=crop',
       excerpt: 'RetailHub needed a conversion-focused storefront with enterprise inventory controls and a beautiful checkout experience. We built an elegant commerce engine that performs seamlessly across devices.',
@@ -86,7 +85,6 @@ export const projects = [
     timeline: '4 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/medcare-health',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1400&h=900&fit=crop',
       excerpt: 'MedCare needed a patient-first mobile experience for appointments, telehealth, and medication tracking. We launched a secure, polished app that patients love.',
@@ -160,7 +158,6 @@ export const projects = [
     timeline: '3.5 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/edupro-lms',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&h=900&fit=crop',
       excerpt: 'EduPro needed a digital academy that scales across courses, instructors, and corporate training. We created a high-engagement learning hub with polished micro-interactions.',
@@ -234,7 +231,6 @@ export const projects = [
     timeline: '3 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/propertyplus-real-estate',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1400&h=900&fit=crop',
       excerpt: 'PropertyPlus launched a property search experience with smart filters, immersive tours, and agent workflows. We delivered a platform that simplifies buying, renting, and listing homes.',
@@ -308,7 +304,6 @@ export const projects = [
     timeline: '2.5 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/foodiehub-ordering',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1400&h=900&fit=crop',
       excerpt: 'FoodieHub wanted a delicious mobile ordering experience that brings customers back. We built a fast, visual app for menu browsing, reservations, and delivery tracking.',
@@ -382,7 +377,6 @@ export const projects = [
     timeline: '4 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/financeflow-dashboard',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&h=900&fit=crop',
       excerpt: 'FinanceFlow needed a modern trading dashboard with live market feeds, portfolio performance, and trade control. We built a fast, data-rich solution that experts trust.',
@@ -456,7 +450,6 @@ export const projects = [
     timeline: '2.5 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/fitlife-fitness',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1400&h=900&fit=crop',
       excerpt: 'FitLife needed a motivational fitness app with workout plans, nutrition guidance, and progress tracking. We created a daily wellness experience for active users.',
@@ -530,7 +523,6 @@ export const projects = [
     timeline: '3.5 months',
     status: 'Completed',
     live: true,
-    demo: '/demo/salespro-crm',
     caseStudy: {
       heroImage: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1400&h=900&fit=crop',
       excerpt: 'SalesPro required a CRM that automates lead workflows and surfaces revenue insights. We built a data-driven sales platform with easy collaboration and reporting.',

@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/testimonials';
+import ImageOptimized from '../components/ui/ImageOptimized';
 import { usePageMetadata } from '../utils/useSeo';
-import Button from '../components/ui/Button';
 
 export default function Blog() {
   usePageMetadata({
@@ -64,7 +64,7 @@ export default function Blog() {
           <div className="mt-12 grid gap-8 lg:grid-cols-3">
             {filteredPosts.map((post) => (
               <article key={post.slug} className="glass rounded-[2rem] p-6 shadow-xl">
-                <img src={post.image} alt={post.title} className="h-52 w-full rounded-3xl object-cover" />
+                <ImageOptimized src={post.image} alt={post.title} className="h-52 w-full rounded-3xl object-cover" />
                 <p className="mt-5 text-sm uppercase tracking-[0.28em] text-primary-600">{post.category}</p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-900 dark:text-white">{post.title}</h2>
                 <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">{post.excerpt}</p>

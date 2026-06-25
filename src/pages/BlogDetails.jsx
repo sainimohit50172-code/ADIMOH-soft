@@ -1,16 +1,43 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from '../data/testimonials';
+import SocialShare from '../components/SocialShare';
+import ImageOptimized from '../components/ui/ImageOptimized';
 import { usePageMetadata } from '../utils/useSeo';
 import Button from '../components/ui/Button';
+import { useEffect } from 'react';
 
 export default function BlogDetails() {
   const { slug } = useParams();
   const post = blogPosts.find((item) => item.slug === slug);
 
+  // preload hero image for performance when available
+  useEffect(() => {
+    if (!post?.image) return;
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = post.image;
+    document.head.appendChild(link);
+    return () => link.remove();
+  }, [post?.image]);
+
   usePageMetadata({
     title: post ? `${post.title} | AdiMo soft` : 'Blog Post | AdiMo soft',
     description: post ? post.excerpt : 'Read this blog post on modern web development and freelance growth.',
+    image: post?.image,
+    structuredData: post
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          image: [post.image],
+          author: { '@type': 'Person', name: post.author },
+          datePublished: post.date,
+          description: post.excerpt,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': `${window.location.origin}/blog/${post.slug}` },
+        }
+      : undefined,
   });
 
   if (!post) {
@@ -35,13 +62,50 @@ export default function BlogDetails() {
             <p className="text-sm text-slate-500 dark:text-slate-400">{post.date} • {post.readTime} • by {post.author}</p>
           </div>
           <div className="mt-10 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl dark:border-dark-700 dark:bg-dark-900">
-            <img src={post.image} alt={post.title} className="h-[420px] w-full object-cover" />
+            <ImageOptimized src={post.image} alt={post.title} className="h-[420px] w-full object-cover" priority />
           </div>
           <article className="mt-10 space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed">
             <p>{post.excerpt}</p>
-            <p>{post.excerpt} Additional insights and practical guidance make this article a complete guide for modern teams.</p>
-            <p>Use these strategies to turn your next project into a polished digital experience with a premium freelance partner.</p>
+            <div dangerouslySetInnerHTML={{ __html: post.content || `<p>${post.excerpt} Additional insights and practical guidance make this article a complete guide for modern teams.</p><p>Use these strategies to turn your next project into a polished digital experience with a premium freelance partner.</p>` }} />
           </article>
+          <div className="mt-8">
+            <SocialShare url={`${window.location.origin}/blog/${post.slug}`} title={post.title} description={post.excerpt} />
+          </div>
+          {/* Related posts and prev/next */}
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div>
+              <h4 className="font-semibold">Previous / Next</h4>
+              <div className="mt-4 space-y-2">
+                {(() => {
+                  const idx = blogPosts.findIndex((p) => p.slug === post.slug);
+                  const prev = blogPosts[idx - 1];
+                  const next = blogPosts[idx + 1];
+                  return (
+                    <>
+                      {prev && <Link to={`/blog/${prev.slug}`} className="block">← {prev.title}</Link>}
+                      {next && <Link to={`/blog/${next.slug}`} className="block">{next.title} →</Link>}
+                    </>
+                  );
+                })()}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold">Related Posts</h4>
+              <div className="mt-4 space-y-2">
+                {blogPosts.filter((p) => p.category === post.category && p.slug !== post.slug).slice(0,3).map((rp) => (
+                  <Link key={rp.slug} to={`/blog/${rp.slug}`} className="block">{rp.title}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold">More from us</h4>
+              <div className="mt-4 space-y-2">
+                {blogPosts.slice(0,3).map((rp) => (
+                  <Link key={rp.slug} to={`/blog/${rp.slug}`} className="block">{rp.title}</Link>
+                ))}
+              </div>
+            </div>
+          </div>
           <div className="mt-12 flex flex-wrap items-center gap-4">
             <Link to="/blog" className="btn-secondary">Back to Blog</Link>
             <Button>Book Discovery Call</Button>

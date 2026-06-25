@@ -4,6 +4,7 @@ import { FaBullseye, FaLightbulb, FaHandshake, FaUserTie, FaRocket, FaChartLine,
 import { SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiNodedotjs, SiPython, SiLaravel, SiDjango, SiPostgresql } from 'react-icons/si';
 import { companyInfo } from '../data/projects';
 import { stats } from '../data/services';
+import ImageOptimized from '../components/ui/ImageOptimized';
 
 const values = [
   { icon: <FaBullseye />, title: 'Precision', description: 'Every project is crafted with exacting attention to detail and strategic thinking.' },
@@ -130,7 +131,7 @@ export default function About() {
               </div>
             </div>
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-              <img
+              <ImageOptimized
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
                 alt="Team working together"
                 className="h-full w-full object-cover"
@@ -244,7 +245,7 @@ export default function About() {
             {techCards.map((tech) => (
               <div key={tech.name} className="group h-full overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/30">
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <ImageOptimized
                     src={tech.image}
                     alt={`${tech.name} preview`}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
